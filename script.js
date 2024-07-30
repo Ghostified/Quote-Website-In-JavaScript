@@ -17,3 +17,8 @@ async function getquote(url){
     console.log(quoteData);
 }
 getquote(api_url);
+
+//Create Tweet
+function tweet(){
+    window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML + "---- by  " + author.innerHTML, "Tweet Window", "width=500 ,height=300");
+}
